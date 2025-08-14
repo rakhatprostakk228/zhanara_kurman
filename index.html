@@ -1712,7 +1712,7 @@ function updateCartButton() {
     const total = cart.reduce((sum, item) => sum + (parsePrice(item.price) * item.quantity), 0);
     
     if (cart.length === 0) {
-        cartTotal.textContent = 'корзина';
+        cartTotal.textContent = '0 ₸';
     } else {
         cartTotal.textContent = total + ' ₸';
     }
